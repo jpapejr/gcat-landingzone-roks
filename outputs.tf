@@ -11,12 +11,28 @@ output access_groups {
 
 
 ##############################################################################
+# Resource Groups
+##############################################################################
+
+output resource_group_id {
+    description = "Resource group information"
+    value       = ibm_resource_group.resource_group.id
+}
+
+##############################################################################
+
+##############################################################################
 # VPC
 ##############################################################################
 
 output vpc_id {
   description = "ID of VPC created"
   value       = module.multizone_vpc.vpc_id
+}
+
+output vpc_crn {
+  description = "CRN of the VPC created"
+  value       = module.multizone_vpc.vpc_crn
 }
 
 output acl_id {
@@ -28,6 +44,7 @@ output public_gateways {
   description = "Public gateways created"
   value       = module.multizone_vpc.public_gateways
 }
+
 
 ##############################################################################
 

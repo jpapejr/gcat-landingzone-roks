@@ -7,6 +7,11 @@ output vpc_id {
   value       = ibm_is_vpc.vpc.id
 }
 
+output vpc_crn {
+  description = "CRN of the VPC created"
+  value       = ibm_is_vpc.vpc.crn
+}
+
 output acl_id {
   description = "ID of ACL created for subnets"
   value       = ibm_is_network_acl.multizone_acl
