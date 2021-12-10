@@ -152,6 +152,12 @@ variable worker_pools {
 
 }
 
+variable disable_public_service_endpoint {
+    default = false
+    type = bool
+    description = "If true, provision the cluster with private master endpoints"
+}
+
 ##############################################################################
 
 
