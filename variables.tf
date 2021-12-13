@@ -472,6 +472,12 @@ variable tags {
     }
 }
 
+variable disable_public_service_endpoint {
+  type = string
+  description = "Boolean to disable public endpoints for the master"
+  default = "false"
+}
+
 variable worker_pools {
     description = "List of maps describing worker pools"
 
