@@ -34,7 +34,6 @@ module multizone_vpc {
   classic_access       = var.classic_access
   subnets              = var.subnets
   use_public_gateways  = var.use_public_gateways
-  acl_rules            = local.all_acl_rules
   security_group_rules = var.security_group_rules
 }
 
